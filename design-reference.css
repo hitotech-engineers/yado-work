@@ -142,6 +142,16 @@ header .tag {
   text-shadow: 0 2px 0 #720008;
 }
 
+.hero h1 .hero-line { display: block; }
+
+.hero h1 .hero-key {
+  display: inline-block;
+  font-size: 1.12em;
+  font-weight: 1000;
+  letter-spacing: .025em;
+  text-shadow: 0 2px 0 #720008, 0 6px 16px rgba(65, 0, 5, .38) !important;
+}
+
 .hero .lead {
   max-width: 660px !important;
   margin: 8px 0 0 !important;
