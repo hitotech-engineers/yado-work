@@ -732,6 +732,7 @@ footer .fname { font-size: 19px !important; font-style: italic; }
   .step-lp #formScreen .progress { position: static !important; }
   .step-lp #formScreen .step { padding: 36px 48px 8px !important; }
   .step-lp #formScreen .opts:not(.two) { grid-template-columns: 1fr 1fr; gap: 14px; }
+  .step-lp #formScreen .opts:not(.two) .opt:last-child:nth-child(odd) { grid-column: 1 / -1; }
 
   .step-lp .wrap > footer {
     padding: 30px max(40px, calc((100% - 1200px) / 2)) !important;
