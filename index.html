@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ヤドワーク | LPプレビュー</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --primary:#e5391c;--primary-dark:#bb2410;--navy:#2b1210;--sky:#ff8a3d;
+    --bg:#fdf2ee;--card:#fff;--text:#2b1a17;--muted:#94756e;--line:#f2d8cd;
+    --shadow:0 10px 30px rgba(180,42,18,.12);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+    color:var(--text);line-height:1.7;min-height:100vh;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    padding:40px 20px;
+    background:radial-gradient(1000px 500px at 50% -150px,#fbe0d6 0%,transparent 60%),var(--bg);
+  }
+  .logo{font-size:30px;font-weight:900;letter-spacing:.5px;color:var(--navy);margin-bottom:6px;}
+  .logo .b{color:var(--primary);}
+  .tag{font-size:13px;font-weight:700;color:var(--muted);margin-bottom:6px;}
+  .note{font-size:12.5px;color:var(--muted);background:#fff;border:1px solid var(--line);
+    border-radius:999px;padding:6px 16px;margin-bottom:34px;}
+  .cards{display:grid;gap:20px;width:100%;max-width:760px;}
+  @media(min-width:640px){ .cards{grid-template-columns:1fr 1fr;} }
+  .card{background:var(--card);border:1px solid var(--line);border-radius:20px;
+    padding:28px 26px;box-shadow:var(--shadow);text-decoration:none;color:inherit;
+    display:flex;flex-direction:column;transition:transform .16s,box-shadow .16s;}
+  .card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(180,42,18,.18);}
+  .card .badge{align-self:flex-start;font-size:11px;font-weight:800;color:#fff;
+    background:linear-gradient(135deg,var(--sky),var(--primary));
+    padding:5px 12px;border-radius:999px;margin-bottom:14px;letter-spacing:.5px;}
+  .card h2{font-size:19px;font-weight:900;color:var(--navy);margin-bottom:6px;}
+  .card p{font-size:13px;color:var(--muted);margin-bottom:20px;flex:1;}
+  .card .go{display:inline-flex;align-items:center;gap:6px;align-self:flex-start;
+    font-size:14px;font-weight:900;color:var(--primary);}
+  .card .go::after{content:"›";font-size:20px;}
+  footer{margin-top:34px;font-size:11px;color:var(--muted);text-align:center;line-height:1.9;}
+</style>
+</head>
+<body>
+  <div class="logo">ヤド<span class="b">ワーク</span></div>
+  <div class="tag">寮付き・住み込み求人サポート</div>
+  <div class="note">🔒 デザイン確認用プレビュー（社外共有時はご注意ください）</div>
+
+  <div class="cards">
+    <a class="card" href="v2_home.html">
+      <span class="badge">パターンA</span>
+      <h2>ステップ型LP</h2>
+      <p>質問に順番に答えていく診断・ステップ形式。入力のハードルを下げ、離脱を防ぐ設計です。</p>
+      <span class="go">プレビューを見る</span>
+    </a>
+    <a class="card" href="lp_normal.html">
+      <span class="badge">パターンB</span>
+      <h2>通常LP</h2>
+      <p>1ページスクロール型の従来型LP。サービスの強み・流れ・FAQを見せてから応募フォームへ。</p>
+      <span class="go">プレビューを見る</span>
+    </a>
+  </div>
+
+  <footer>
+    ※ フォーム送信は未設定のためテスト送信はできません（見た目確認用）。<br>
+    運営会社名・許可番号・プライバシーポリシーは雛形です。
+  </footer>
+</body>
+</html>

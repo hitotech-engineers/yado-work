@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ▼▼ 計測タグ：本番前に有効化してください（ダミーIDでの誤発火・遅延を防ぐため、既定では無効化しています）▼▼
+     使い方：下のブロックのコメントを外し、GTM-XXXXXXX と "XXXXXXXXXX" を自社IDに置き換える
+
+<!== Google Tag Manager ==>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+
+<!== Microsoft Clarity ==>
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "XXXXXXXXXX");
+</script>
+
+▲▲ 計測タグ ここまで ▲▲ -->
+<title>ヤドワーク | 寮付き・住み込み求人サポート</title>
+<meta name="description" content="寮付き・住み込みのお仕事に特化した求人サポート「ヤドワーク」。所持金0円・即日入寮OK。工場・軽作業・物流など、住まいごと見つかる求人をご紹介します。">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0,0&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --primary:#e5391c;
+    --primary-dark:#bb2410;
+    --navy:#2b1210;
+    --accent:#f26522;
+    --sky:#ff8a3d;
+    --sky-light:#ffcba8;
+    --bg:#fdf2ee;
+    --card:#ffffff;
+    --text:#2b1a17;
+    --muted:#94756e;
+    --line:#f2d8cd;
+    --danger:#e23b3b;
+    --radius:16px;
+    --shadow:0 10px 30px rgba(180,42,18,.12);
+    --shadow-sm:0 2px 8px rgba(180,42,18,.07);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+  html{scroll-behavior:smooth;height:100%;background:var(--navy);overscroll-behavior:none;}
+  body{
+    font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+    color:var(--text);line-height:1.65;min-height:100%;
+    overscroll-behavior:none;
+    background:
+      radial-gradient(1200px 600px at 50% -200px,#fbe0d6 0%,transparent 60%),
+      var(--bg);
+  }
+  /* スティッキーフッター：通常フローのまま .wrap（縦flex・min-height:100dvh）の
+     最下部に配置。footer の margin-top:auto で、コンテンツが少なくても
+     画面の底に貼り付き、多いときはコンテンツの下に押し出される。 */
+  .wrap{max-width:480px;margin:0 auto;background:transparent;position:relative;
+    display:flex;flex-direction:column;min-height:100vh;min-height:100dvh;}
+  footer{margin-top:auto;position:relative;z-index:40;background:var(--navy);}
+  /* ===== Header ===== */
+  header{
+    background:rgba(255,255,255,.82);backdrop-filter:saturate(160%) blur(10px);
+    -webkit-backdrop-filter:saturate(160%) blur(10px);
+    padding:13px 20px;display:flex;align-items:center;gap:10px;
+    position:sticky;top:0;z-index:50;border-bottom:1px solid var(--line);
+  }
+  header .logo{font-size:21px;font-weight:900;letter-spacing:.3px;color:var(--navy);cursor:pointer;}
+  header .logo .b{color:var(--primary);}
+  header .tag{font-size:10.5px;font-weight:700;color:var(--muted);margin-left:auto;
+    background:#fde4db;padding:5px 10px;border-radius:999px;}
+  /* ===== Hero ===== */
+  .hero{
+    background:
+      radial-gradient(420px 220px at 85% 0%,rgba(255,138,61,.35),transparent 70%),
+      linear-gradient(155deg,rgba(229,57,28,.72) 0%,rgba(187,36,16,.72) 55%,rgba(43,18,16,.8) 100%),
+      url("images/hero-bg.png") center/cover no-repeat;
+    color:#fff;padding:40px 24px 60px;text-align:center;position:relative;overflow:hidden;
+  }
+  .hero::before{content:"";position:absolute;width:240px;height:240px;border-radius:50%;
+    background:rgba(255,255,255,.07);top:-90px;left:-70px;}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:34px;
+    background:var(--bg);
+    clip-path:polygon(0 100%,100% 100%,100% 0,0 60%);}
+  .hero .inner{position:relative;z-index:1;}
+  .hero .sub{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.5px;
+    background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);
+    padding:5px 14px;border-radius:999px;margin-bottom:16px;}
+  .hero h1{font-size:27px;font-weight:900;margin:0 0 10px;line-height:1.4;letter-spacing:.5px;}
+  .hero h1 .hl{
+    background:linear-gradient(transparent 62%,rgba(255,203,168,.5) 62%);
+    color:#fff;padding:0 2px;}
+  .hero .lead{font-size:13.5px;opacity:.95;margin-top:6px;}
+  .hero .badges{display:flex;gap:7px;justify-content:center;margin-top:18px;flex-wrap:wrap;}
+  .hero .badge{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.32);
+    border-radius:8px;padding:7px 12px;font-size:12px;font-weight:700;
+    display:inline-flex;align-items:center;gap:5px;}
+  .hero .badge .material-symbols-outlined{font-size:16px;line-height:1;font-variation-settings:'wght' 300;}
+  /* ===== Intro CTA ===== */
+  .intro{padding:6px 20px 34px;text-align:center;}
+  .intro .q{font-size:19px;font-weight:900;margin-bottom:3px;color:var(--navy);}
+  .intro .note{font-size:12px;color:var(--muted);margin-bottom:18px;}
+  .cta{
+    position:relative;display:flex;align-items:center;justify-content:center;
+    width:100%;border:none;border-radius:14px;cursor:pointer;overflow:hidden;
+    font-size:17px;font-weight:900;padding:18px 22px;margin:11px 0;color:#fff;
+    background:linear-gradient(135deg,var(--sky),var(--primary));
+    box-shadow:0 8px 20px rgba(229,57,28,.35);
+    transition:transform .14s,box-shadow .14s;font-family:inherit;
+  }
+  .cta::after{content:"›";position:absolute;right:20px;font-size:26px;font-weight:700;opacity:.9;}
+  .cta.alt{background:linear-gradient(135deg,#ff9d5c,#e2551e);box-shadow:0 8px 20px rgba(226,85,30,.3);}
+  .cta:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(229,57,28,.4);}
+  .cta:active{transform:translateY(1px);}
+  .cta .txt{display:flex;flex-direction:column;align-items:center;line-height:1.3;}
+  .cta small{font-size:11.5px;font-weight:600;opacity:.95;margin-top:2px;}
+  /* 採用担当者向け：控えめな小さいボタン */
+  .cta-mini{
+    display:inline-flex;align-items:center;justify-content:center;gap:6px;
+    margin:10px auto 0;padding:7px 16px;line-height:1;
+    font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;
+    color:var(--muted);background:transparent;text-decoration:none;
+    border:1px solid var(--line);border-radius:999px;
+    transition:color .16s,border-color .16s,background .16s;
+  }
+  .cta-mini::after{content:"›";font-size:16px;font-weight:700;opacity:.8;line-height:1;
+    position:relative;top:-2px;}
+  .cta-mini:hover{color:var(--primary);border-color:var(--sky);background:#fff5f0;}
+  .trust{display:flex;justify-content:center;gap:10px;margin-top:24px;}
+  .trust .t{flex:1;background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:12px 8px;box-shadow:var(--shadow-sm);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;}
+  .trust .tt{display:flex;flex-direction:column;align-items:center;line-height:1.1;}
+  .trust b{color:var(--primary);font-size:18px;font-weight:900;display:block;line-height:1.2;}
+  .trust span{font-size:10.5px;color:var(--muted);font-weight:700;}
+  .trust .t .material-symbols-outlined{font-size:30px;color:var(--primary);flex-shrink:0;
+    font-variation-settings:'wght' 300;}
+  /* ===== Form ===== */
+  .form-area{padding:0 0 48px;}
+  .progress{
+    position:sticky;top:55px;z-index:40;
+    background:rgba(253,242,238,.92);backdrop-filter:blur(8px);
+    padding:14px 20px 12px;border-bottom:1px solid var(--line);
+  }
+  .progress .bar{height:9px;background:#f7ddd2;border-radius:999px;overflow:hidden;}
+  .progress .fill{height:100%;width:0;border-radius:999px;transition:width .4s cubic-bezier(.4,0,.2,1);
+    background:linear-gradient(90deg,var(--sky),var(--primary));position:relative;}
+  .progress .fill::after{content:"";position:absolute;inset:0;border-radius:999px;
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,.5),transparent);
+    animation:shine 1.8s infinite;}
+  @keyframes shine{0%{transform:translateX(-100%);}60%,100%{transform:translateX(100%);}}
+  .progress .meta{display:flex;justify-content:space-between;font-size:11.5px;color:var(--muted);margin-top:7px;font-weight:700;}
+  .progress .meta b{color:var(--primary);}
+  .step{display:none;padding:26px 20px 0;animation:slide .35s ease;}
+  .step.active{display:block;}
+  @keyframes slide{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:none;}}
+  .step h2{font-size:21px;font-weight:900;text-align:center;margin-bottom:5px;color:var(--navy);letter-spacing:.3px;}
+  .step .desc{font-size:12px;color:var(--muted);text-align:center;margin-bottom:20px;}
+  .opts{display:grid;gap:11px;}
+  .opts.two{grid-template-columns:1fr 1fr;}
+  .opt{
+    position:relative;border:2px solid var(--line);background:var(--card);border-radius:14px;
+    padding:16px 18px;font-size:15.5px;font-weight:700;cursor:pointer;text-align:left;
+    display:flex;align-items:center;gap:13px;transition:all .16s;color:var(--text);
+    box-shadow:var(--shadow-sm);
+  }
+  .opts.two .opt{justify-content:center;text-align:center;padding:24px 10px;}
+  .opt .ic{
+    width:38px;height:38px;border-radius:10px;
+    background:linear-gradient(135deg,#fde0d5,#fbd3c4);color:var(--primary);
+    display:grid;place-items:center;font-size:19px;flex:none;transition:all .16s;
+  }
+  .opt::after{content:"›";margin-left:auto;color:#e8bcae;font-size:22px;font-weight:700;transition:color .16s;}
+  .opts.two .opt::after{display:none;}
+  .opt:hover{border-color:var(--sky);background:#fff5f0;transform:translateY(-1px);
+    box-shadow:0 6px 16px rgba(229,57,28,.12);}
+  .opt:hover::after{color:var(--sky);}
+  .opt.sel{border-color:var(--primary);background:#fdeee7;
+    box-shadow:0 6px 18px rgba(229,57,28,.22);}
+  .opt.sel .ic{background:linear-gradient(135deg,var(--sky),var(--primary));color:#fff;transform:scale(1.05);}
+  .opt.sel::after{content:"✓";color:var(--primary);}
+  /* inputs */
+  .field{margin-bottom:20px;}
+  .field label{display:block;font-size:14px;font-weight:800;margin-bottom:8px;color:var(--navy);}
+  .field label .req{color:#fff;background:var(--danger);font-size:10px;font-weight:800;
+    margin-left:7px;padding:2px 7px;border-radius:5px;vertical-align:middle;}
+  .field input,.field select{
+    width:100%;border:2px solid var(--line);border-radius:12px;padding:15px;
+    font-size:16px;background:#fff;color:var(--text);font-family:inherit;transition:border-color .15s,box-shadow .15s;
+  }
+  .field input:focus,.field select:focus{outline:none;border-color:var(--primary);
+    box-shadow:0 0 0 4px rgba(229,57,28,.12);}
+  .field .hint{font-size:11px;color:var(--muted);margin-top:6px;}
+  .field .err{font-size:12px;color:var(--danger);margin-top:6px;display:none;font-weight:700;}
+  .field.invalid input,.field.invalid select{border-color:var(--danger);box-shadow:0 0 0 4px rgba(226,59,59,.1);}
+  .field.invalid .err{display:block;}
+  .dob-row{display:flex;gap:8px;}
+  .dob-row select{flex:1.4;min-width:0;padding-left:10px;padding-right:10px;}
+  .dob-row select:first-child{flex:2;}
+  .nav{display:flex;gap:11px;margin-top:24px;}
+  .btn{
+    flex:1;border:none;border-radius:13px;padding:17px;font-size:16px;font-weight:900;
+    cursor:pointer;transition:transform .12s,box-shadow .12s;font-family:inherit;
+  }
+  .btn:active{transform:translateY(1px);}
+  .btn-back{background:#f5e2db;color:var(--muted);flex:0 0 32%;}
+  .btn-back:hover{background:#eecfc5;}
+  .btn-next{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;
+    box-shadow:0 8px 18px rgba(229,57,28,.3);}
+  .btn-next:hover{box-shadow:0 12px 22px rgba(229,57,28,.38);}
+  .btn-submit{background:linear-gradient(135deg,var(--sky),var(--primary));color:#fff;line-height:1.3;
+    box-shadow:0 8px 20px rgba(229,57,28,.35);}
+  .btn-submit:hover{box-shadow:0 12px 26px rgba(229,57,28,.42);}
+  .secure{display:flex;align-items:center;justify-content:center;gap:6px;
+    font-size:11px;color:var(--muted);margin-top:18px;}
+  .privacy{font-size:12px;color:var(--muted);text-align:center;margin-top:16px;}
+  .privacy input{margin-right:6px;transform:scale(1.25);vertical-align:middle;accent-color:var(--primary);}
+  .privacy a{color:var(--primary);font-weight:700;}
+  /* ===== Done ===== */
+  .done{display:none;padding:54px 24px;text-align:center;animation:slide .45s ease;}
+  .done.active{display:block;}
+  .done .check{width:92px;height:92px;border-radius:50%;
+    background:linear-gradient(135deg,var(--sky),var(--primary));color:#fff;
+    display:grid;place-items:center;font-size:46px;margin:0 auto 22px;
+    box-shadow:0 12px 30px rgba(229,57,28,.4);animation:pop .5s cubic-bezier(.2,.8,.3,1.4);}
+  @keyframes pop{0%{transform:scale(0);}100%{transform:scale(1);}}
+  .done h2{font-size:23px;font-weight:900;margin-bottom:12px;color:var(--navy);}
+  .done p{font-size:14px;color:var(--muted);margin-bottom:6px;}
+  .done .box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:20px;margin-top:26px;text-align:left;font-size:13.5px;box-shadow:var(--shadow);}
+  .done .box h3{font-size:13px;color:var(--primary);margin-bottom:12px;font-weight:800;
+    padding-bottom:8px;border-bottom:2px solid #fde4db;}
+  .done .box .line{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line);}
+  .done .box .line:last-child{border:none;}
+  .done .box .line span:first-child{color:var(--muted);white-space:nowrap;}
+  .done .box .line span:last-child{font-weight:700;text-align:right;}
+  /* ===== Footer ===== */
+  footer{background:var(--navy);color:#c9a99f;padding:26px 20px;text-align:center;font-size:11px;margin-top:auto;}
+  footer .upd{display:inline-block;color:var(--navy);background:var(--sky-light);font-weight:800;
+    padding:5px 14px;border-radius:999px;margin-bottom:12px;font-size:11px;}
+  footer .fname{color:#fff;font-weight:900;font-size:14px;margin-bottom:8px;letter-spacing:.5px;}
+  footer .lic{font-size:10px;color:#b08d84;margin-top:8px;line-height:1.7;}
+  footer a{color:#c9a99f;margin:0 8px;text-decoration:none;}
+  footer a:hover{color:#fff;}
+  /* ===== Modal ===== */
+  .modal-overlay{position:fixed;inset:0;z-index:100;display:none;padding:20px;
+    background:rgba(43,18,16,.55);-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);
+    align-items:center;justify-content:center;}
+  .modal-overlay.open{display:flex;}
+  .modal{background:#fff;border-radius:16px;max-width:680px;width:100%;max-height:85vh;
+    display:flex;flex-direction:column;overflow:hidden;box-shadow:0 20px 50px rgba(180,42,18,.3);}
+  .modal-head{display:flex;align-items:center;justify-content:space-between;gap:12px;
+    padding:15px 20px;border-bottom:1px solid var(--line);flex:none;}
+  .modal-head h2{font-size:16px;font-weight:900;color:var(--navy);margin:0;}
+  .modal-close{border:none;background:transparent;font-size:24px;line-height:1;
+    color:var(--muted);cursor:pointer;padding:2px 8px;border-radius:8px;flex:none;}
+  .modal-close:hover{background:#fbeee9;color:var(--navy);}
+  .modal-body{padding:18px 22px;overflow-y:auto;-webkit-overflow-scrolling:touch;
+    font-size:12.5px;line-height:1.85;color:var(--text);}
+  .modal-body h3{font-size:13.5px;font-weight:900;color:var(--navy);margin:18px 0 6px;}
+  .modal-body h3:first-of-type{margin-top:0;}
+  .modal-body p{margin:0 0 10px;}
+  .modal-body ul{margin:0 0 10px;padding-left:1.3em;}
+  .modal-body .meta{font-size:11px;color:var(--muted);margin-bottom:4px;}
+  .modal-body ol{margin:0 0 10px;padding-left:1.5em;}
+  .modal-body .todo{background:#fff6e5;border:1px solid #f0d38a;border-radius:10px;
+    padding:12px 14px;font-size:11.5px;color:#8a6d16;margin-bottom:14px;}
+  /* スマホ：お気持ちセクションを画面中央のモーダルに */
+  .intro-close{display:none;}
+  @media (max-width:559px){
+    #introScreen.modal-open::before{
+      content:"";position:fixed;inset:0;z-index:900;
+      background:rgba(43,18,16,.55);backdrop-filter:blur(2px);
+      -webkit-backdrop-filter:blur(2px);
+    }
+    #introScreen.modal-open .intro{
+      position:fixed;top:50%;left:50%;
+      transform:translate(-50%,-50%) scale(.85);
+      width:calc(100% - 28px);max-width:430px;max-height:90vh;
+      overflow-y:auto;-webkit-overflow-scrolling:touch;
+      z-index:1000;background:#fff;border-radius:24px;
+      padding:42px 24px 28px;
+      box-shadow:0 28px 70px rgba(43,18,16,.45);
+      opacity:0;animation:introPop .32s cubic-bezier(.2,.9,.3,1.2) forwards;
+    }
+    #introScreen.modal-open .intro .q{font-size:24px;margin-bottom:6px;}
+    #introScreen.modal-open .intro .note{font-size:13px;margin-bottom:22px;}
+    #introScreen.modal-open .intro .cta{font-size:18px;padding:20px 22px;}
+    #introScreen.modal-open .intro .cta small{font-size:12px;}
+    #introScreen.modal-open .intro-close{
+      display:flex;align-items:center;justify-content:center;
+      position:absolute;top:12px;right:12px;width:34px;height:34px;
+      border:none;border-radius:50%;cursor:pointer;
+      font-size:22px;line-height:1;color:var(--muted);
+      background:#fbeee9;font-family:inherit;padding:0;
+      transition:background .16s,color .16s;
+    }
+    #introScreen.modal-open .intro-close:active{background:#f0d9d0;color:var(--navy);}
+  }
+  @keyframes introPop{
+    to{opacity:1;transform:translate(-50%,-50%) scale(1);}
+  }
+  /* PC専用レイアウト（横900px以上） */
+  @media (min-width:900px){
+    body{
+      background:
+        radial-gradient(900px 500px at 50% -200px,#fbe0d6 0%,transparent 60%),
+        linear-gradient(180deg,#fdeee8,#fbe8e2);
+    }
+    .wrap{max-width:100%;width:100%;}
+    header{padding:16px 68px;}
+    header .logo{font-size:23px;}
+    header .tag{font-size:12px;}
+    #introScreen{
+      position:relative;overflow:hidden;
+      min-height:calc(100dvh - 62px - var(--footer-h,0px));
+      background:linear-gradient(150deg,#e5391c 0%,#bb2410 55%,#2b1210 100%);
+      display:flex;flex-direction:column;justify-content:center;gap:40px;
+      padding:64px max(40px,calc((100% - 1120px)/2));
+    }
+    #introScreen::before{
+      content:"";position:absolute;top:0;right:0;bottom:0;
+      width:60%;z-index:0;pointer-events:none;
+      background:url("images/hero-bg.png") center/cover no-repeat;
+      -webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.5) 10%,#000 22%);
+      mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.5) 10%,#000 60%);
+    }
+    .hero,.intro{position:relative;z-index:1;}
+    .hero{
+      background:none;padding:0;align-self:flex-start;max-width:720px;
+      text-align:left;overflow:visible;
+    }
+    .hero::before,.hero::after{display:none;}
+    .hero .sub{font-size:16px;margin-bottom:24px;padding:7px 16px;}
+    .hero h1{font-size:54px;line-height:1.25;margin-bottom:22px;}
+    .hero .lead{font-size:21px;line-height:1.6;}
+    .hero .lead br{display:none;}
+    .hero .badges{justify-content:flex-start;margin-top:30px;gap:11px;}
+    .hero .badge{font-size:15px;padding:10px 18px;}
+    .intro{
+      width:100%;max-width:1120px;
+      background:var(--card);border-radius:22px;padding:32px 36px;margin:0;
+      box-shadow:0 30px 70px rgba(43,18,16,.35);
+    }
+    .intro .q{font-size:24px;}
+    .cta-row{display:flex;gap:16px;}
+    .cta-row .cta{margin:0;flex:1;}
+    .cta{font-size:18px;}
+    .cta:hover{transform:translateY(-2px);}
+    .trust .t{flex-direction:row;gap:14px;}
+    .trust .tt{align-items:flex-start;}
+    .trust b{font-size:23px;}
+    .trust span{font-size:12.5px;}
+    .trust .t .material-symbols-outlined{font-size:42px;}
+    #formScreen,#doneScreen{
+      flex:0 0 auto;align-self:center;
+      width:100%;max-width:600px;margin:48px auto;
+      background:var(--card);border-radius:22px;
+      box-shadow:0 20px 50px rgba(120,30,15,.14);
+      padding-bottom:34px;
+    }
+    .progress{position:static;border-radius:22px 22px 0 0;background:#fdf1ec;}
+    .step{padding:30px 34px 0;}
+    .step h2{font-size:23px;}
+    .done{padding:56px 40px;}
+    footer{padding:30px max(40px,calc((100% - 1120px)/2));}
+  }
+  @media (min-width:560px) and (max-width:899px){
+    body{background:
+      radial-gradient(700px 450px at 50% -120px,#f7ddd2 0%,transparent 60%),var(--bg);}
+    .wrap{max-width:520px;box-shadow:0 0 50px rgba(120,30,15,.10);}
+  }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript)：GTM有効化時に下のコメントを外す
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+-->
+<div class="wrap">
+
+  <header>
+    <div class="logo" id="homeLogo" role="button" aria-label="トップに戻る">ヤド<span class="b">ワーク</span></div>
+    <div class="tag">寮付き・住み込み求人サポート</div>
+  </header>
+
+  <!-- ===== INTRO ===== -->
+  <section id="introScreen">
+    <div class="hero">
+      <div class="inner">
+        <span class="sub">お仕事と住まいを、まとめて解決</span>
+        <h1>寮付きのお仕事を<span class="hl">即日</span>でご紹介<br><span class="hl">最短3日で入寮</span>できて所持金0円でも安心</h1>
+        <div class="lead">あなたの希望に応じて工場・軽作業・物流など<br>寮完備の求人をあなたにお届け！</div>
+        <div class="badges">
+          <span class="badge"><span class="material-symbols-outlined">home_work</span>寮費0円あり</span>
+          <span class="badge"><span class="material-symbols-outlined">bolt</span>即日入寮OK</span>
+          <span class="badge"><span class="material-symbols-outlined">savings</span>所持金0円OK</span>
+          <span class="badge"><span class="material-symbols-outlined">school</span>未経験歓迎</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro">
+      <button class="intro-close" id="introClose" type="button" aria-label="閉じる">×</button>
+      <div class="q">あなたの今のお気持ちは？</div>
+      <div class="note">あてはまる方をお選びください</div>
+      <div class="cta-row">
+        <button class="cta" data-feeling="今すぐ働いて住みたい">
+          <span class="txt">今すぐ働いて住みたい<small>スピード重視で寮付き求人を紹介</small></span>
+        </button>
+        <button class="cta alt" data-feeling="良い条件があれば知りたい">
+          <span class="txt">良い条件があれば知りたい<small>まずは情報収集から</small></span>
+        </button>
+      </div>
+
+      <div style="text-align:center;">
+        <a class="cta-mini" href="#" target="_blank" rel="noopener">採用担当者はこちら</a>
+      </div>
+
+      <div class="trust">
+        <div class="t"><span class="material-symbols-outlined">apartment</span><div class="tt"><b>4,000+</b><span>寮付き求人</span></div></div>
+        <div class="t"><span class="material-symbols-outlined">thumb_up</span><div class="tt"><b>97%</b><span>採用率</span></div></div>
+        <div class="t"><span class="material-symbols-outlined">volunteer_activism</span><div class="tt"><b>相談無料</b><span>費用0円</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FORM ===== -->
+  <section id="formScreen" class="form-area" style="display:none;">
+    <div class="progress">
+      <div class="bar"><div class="fill" id="fill"></div></div>
+      <div class="meta"><span id="stepLabel">STEP 1</span><span id="stepPct">0%</span></div>
+    </div>
+
+    <!-- STEP 1: 現在の状況 -->
+    <div class="step active" data-step="1">
+      <h2>今の状況を教えてください</h2>
+      <div class="desc">あてはまるものをお選びください</div>
+      <div class="opts" data-key="situation" data-auto>
+        <button class="opt" data-val="今すぐ住む場所が必要"><span class="ic">🏠</span>今すぐ住む場所が必要</button>
+        <button class="opt" data-val="離職中・求職中"><span class="ic">🔍</span>離職中・求職中</button>
+        <button class="opt" data-val="すぐに今の仕事を変えたい"><span class="ic">🚪</span>すぐに今の仕事を変えたい</button>
+        <button class="opt" data-val="まだ検討中"><span class="ic">🤔</span>まだ検討中</button>
+      </div>
+      <div class="nav"><button class="btn btn-back" data-back>＜ 戻る</button></div>
+    </div>
+
+    <!-- STEP 2: 働き方 -->
+    <div class="step" data-step="2">
+      <h2>ご希望の働き方を教えてください</h2>
+      <div class="desc">あてはまるものをお選びください</div>
+      <div class="opts" data-key="workstyle" data-auto>
+        <button class="opt" data-val="寮付き正社員"><span class="ic">👷</span>寮付き正社員</button>
+        <button class="opt" data-val="寮付き派遣"><span class="ic">📋</span>寮付き派遣</button>
+        <button class="opt" data-val="日払い・週払いバイト"><span class="ic">⏰</span>日払い・週払いバイト</button>
+        <button class="opt" data-val="こだわらない"><span class="ic">🤝</span>こだわらない</button>
+      </div>
+      <div class="nav"><button class="btn btn-back" data-back>＜ 戻る</button></div>
+    </div>
+
+    <!-- STEP 3: 時期 -->
+    <div class="step" data-step="3">
+      <h2>いつから働きたいですか？</h2>
+      <div class="desc">あてはまるものをお選びください</div>
+      <div class="opts" data-key="timing" data-auto>
+        <button class="opt" data-val="できるだけ早く（即日〜）"><span class="ic">⚡</span>できるだけ早く（即日〜）</button>
+        <button class="opt" data-val="今週〜今月中"><span class="ic">📅</span>今週〜今月中</button>
+        <button class="opt" data-val="1ヶ月以内"><span class="ic">🗓️</span>1ヶ月以内</button>
+        <button class="opt" data-val="未定"><span class="ic">🤔</span>未定</button>
+      </div>
+      <div class="nav"><button class="btn btn-back" data-back>＜ 戻る</button></div>
+    </div>
+
+    <!-- STEP 4: 入寮希望 -->
+    <div class="step" data-step="4">
+      <h2>入寮のご希望はありますか？</h2>
+      <div class="desc">寮付き・住み込みの求人をご紹介できます</div>
+      <div class="opts" data-key="dormitory" data-auto>
+        <button class="opt" data-val="今すぐ入寮したい"><span class="ic">🏠</span>今すぐ入寮したい</button>
+        <button class="opt" data-val="寮付きがいい"><span class="ic">🛏️</span>寮付きがいい</button>
+        <button class="opt" data-val="通いでもOK"><span class="ic">🚶</span>通いでもOK</button>
+        <button class="opt" data-val="どちらでもよい"><span class="ic">🤝</span>どちらでもよい</button>
+      </div>
+      <div class="nav"><button class="btn btn-back" data-back>＜ 戻る</button></div>
+    </div>
+
+    <!-- STEP 5: 仕事タイプ -->
+    <div class="step" data-step="5">
+      <h2>希望のお仕事タイプは？</h2>
+      <div class="desc">あてはまるものをお選びください</div>
+      <div class="opts two" data-key="jobtype" data-auto>
+        <button class="opt" data-val="工場・製造">工場・製造</button>
+        <button class="opt" data-val="軽作業・仕分け">軽作業・仕分け</button>
+        <button class="opt" data-val="物流・ドライバー">物流・ドライバー</button>
+        <button class="opt" data-val="建築・設備">建築・設備</button>
+      </div>
+      <div class="nav"><button class="btn btn-back" data-back>＜ 戻る</button></div>
+    </div>
+
+    <!-- STEP 6: 希望サポート -->
+    <div class="step" data-step="6">
+      <h2>特に希望するサポートは？</h2>
+      <div class="desc">できる限りご希望に沿ってご紹介します</div>
+      <div class="opts" data-key="support" data-auto>
+        <button class="opt" data-val="日払い・前払いOK"><span class="ic">💴</span>日払い・前払いOK</button>
+        <button class="opt" data-val="食事サポート"><span class="ic">🍚</span>食事サポート</button>
+        <button class="opt" data-val="家具・家電付き"><span class="ic">🛋️</span>家具・家電付き</button>
+        <button class="opt" data-val="特にこだわらない"><span class="ic">🤝</span>特にこだわらない</button>
+      </div>
+      <div class="nav"><button class="btn btn-back" data-back>＜ 戻る</button></div>
+    </div>
+
+    <!-- STEP 7: 現在いる地域 -->
+    <div class="step" data-step="7">
+      <h2>現在いる地域を教えてください</h2>
+      <div class="desc">お近くから通える求人・入寮先をご案内します</div>
+      <div class="field" id="f-res">
+        <label>現在いる地域（都道府県）<span class="req">必須</span></label>
+        <select id="residence">
+          <option value="">都道府県を選択</option>
+        </select>
+        <div class="err">都道府県を選択してください</div>
+      </div>
+      <div class="nav">
+        <button class="btn btn-back" data-back>＜ 戻る</button>
+        <button class="btn btn-next" data-next>次へ ＞</button>
+      </div>
+    </div>
+
+    <!-- STEP 8: 希望勤務エリア -->
+    <div class="step" data-step="8">
+      <h2>希望の勤務エリアはありますか？</h2>
+      <div class="desc">全国の寮付き求人からお探しします</div>
+      <div class="field" id="f-pref">
+        <label>希望勤務エリア<span class="req">必須</span></label>
+        <select id="pref">
+          <option value="">エリアを選択</option>
+          <option value="全国どこでもOK">全国どこでもOK</option>
+        </select>
+        <div class="err">希望勤務エリアを選択してください</div>
+      </div>
+      <div class="nav">
+        <button class="btn btn-back" data-back>＜ 戻る</button>
+        <button class="btn btn-next" data-next>次へ ＞</button>
+      </div>
+    </div>
+
+    <!-- STEP 9: お名前・フリガナ・生年月日・性別 -->
+    <div class="step" data-step="9">
+      <h2>あなたについて教えてください</h2>
+      <div class="desc">ご紹介できる求人がより正確にわかります</div>
+      <div class="field" id="f-name">
+        <label>お名前<span class="req">必須</span></label>
+        <input type="text" id="name" placeholder="例：山田 太郎" autocomplete="name">
+        <div class="err">お名前を入力してください</div>
+      </div>
+      <div class="field" id="f-furigana">
+        <label>フリガナ<span class="req">必須</span></label>
+        <input type="text" id="furigana" placeholder="例：ヤマダ タロウ">
+        <div class="hint">カタカナでご入力ください（ひらがなは自動で変換されます）</div>
+        <div class="err">フリガナをカタカナで入力してください</div>
+      </div>
+      <div class="field" id="f-birth">
+        <label>生年月日<span class="req">必須</span></label>
+        <div class="dob-row">
+          <select id="birthY" autocomplete="bday-year"><option value="">年</option></select>
+          <select id="birthM" autocomplete="bday-month"><option value="">月</option></select>
+          <select id="birthD" autocomplete="bday-day"><option value="">日</option></select>
+        </div>
+        <div class="err">正しい生年月日を選択してください</div>
+      </div>
+      <div class="field" id="f-gender">
+        <label>性別<span class="req">必須</span></label>
+        <select id="gender">
+          <option value="">選択してください</option>
+          <option value="男性">男性</option>
+          <option value="女性">女性</option>
+          <option value="未回答">未回答</option>
+        </select>
+        <div class="err">性別を選択してください</div>
+      </div>
+      <div class="nav">
+        <button class="btn btn-back" data-back>＜ 戻る</button>
+        <button class="btn btn-next" data-next>次へ ＞</button>
+      </div>
+    </div>
+
+    <!-- STEP 10: ご連絡先 -->
+    <div class="step" data-step="10">
+      <h2>ご連絡先を教えてください</h2>
+      <div class="desc">お仕事のご紹介・ご連絡に使用します</div>
+      <div class="field" id="f-tel">
+        <label>携帯番号<span class="req">必須</span></label>
+        <input type="tel" id="tel" placeholder="09012345678" inputmode="numeric" autocomplete="tel">
+        <div class="hint">ハイフンなし・半角数字でご入力ください</div>
+        <div class="err">正しい携帯番号を入力してください</div>
+      </div>
+      <div class="field" id="f-email">
+        <label>メールアドレス<span class="req">必須</span></label>
+        <input type="email" id="email" placeholder="例：sample@example.com" inputmode="email" autocomplete="email">
+        <div class="err">正しいメールアドレスを入力してください</div>
+      </div>
+      <div class="privacy">
+        <label><input type="checkbox" id="agree"><a href="#" data-pp>プライバシーポリシー</a>に同意する</label>
+        <div class="err" id="agreeErr" style="display:none;">同意が必要です</div>
+      </div>
+      <div class="nav">
+        <button class="btn btn-back" data-back>＜ 戻る</button>
+        <button class="btn btn-submit" id="submitBtn">寮付きの<br>非公開求人を受け取る</button>
+      </div>
+      <div class="secure">🔒 入力情報はSSLで保護されています</div>
+    </div>
+  </section>
+
+  <!-- ===== DONE ===== -->
+  <section id="doneScreen" class="done">
+    <div class="check">✓</div>
+    <h2>ご登録ありがとうございます！</h2>
+    <p>担当スタッフより、ご希望に合った<br>寮付き・住み込みのお仕事をご連絡いたします。</p>
+    <div class="box">
+      <h3>ご入力内容</h3>
+      <div id="summary"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="upd" id="updTime">最新求人更新</div>
+    <div class="fname">ヤドワーク</div>
+    <div>寮付き・住み込み求人サポート</div>
+    <div style="margin-top:10px;">
+      <a href="#" data-pp>プライバシーポリシー</a>
+    </div>
+    <div class="lic">
+      運営：〇〇株式会社（※要差し替え）<br>
+      有料職業紹介事業許可番号／労働者派遣事業許可番号：〇〇-〇〇〇〇〇〇（※要記載）
+    </div>
+  </footer>
+
+  <!-- ===== プライバシーポリシー モーダル ===== -->
+  <div class="modal-overlay" id="ppModal" role="dialog" aria-modal="true" aria-label="プライバシーポリシー">
+    <div class="modal">
+      <div class="modal-head">
+        <h2>プライバシーポリシー</h2>
+        <button class="modal-close" id="ppClose" aria-label="閉じる">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="todo">⚠ このプライバシーポリシーは<strong>雛形（プレースホルダ）</strong>です。〇〇の箇所を運営会社の正式な情報に差し替え、必要に応じて弁護士・専門家の確認を受けてから公開してください。人材紹介・派遣を行う場合は許可番号の表示が法令上必要です。</div>
+        <p class="meta">制定日 〇〇年〇月〇日</p>
+
+        <h3>1. 事業者情報</h3>
+        <p>〇〇株式会社（以下「当社」といいます。）<br>
+        所在地：〒〇〇〇-〇〇〇〇 〇〇県〇〇市〇〇<br>
+        代表者：〇〇 〇〇<br>
+        お問い合わせ：info@example.com</p>
+
+        <h3>2. 取得する個人情報</h3>
+        <p>当社は、本サイトのお仕事紹介サービスにおいて、氏名、フリガナ、生年月日、性別、電話番号、メールアドレス、居住地域、希望条件等の情報を取得します。</p>
+
+        <h3>3. 利用目的</h3>
+        <p>当社は、取得した個人情報を以下の目的で利用します。</p>
+        <ul>
+          <li>寮付き・住み込み求人その他お仕事のご紹介、及びそれに伴うご連絡のため</li>
+          <li>お問い合わせ・ご相談への対応のため</li>
+          <li>サービスの品質向上、及び新サービスの開発・改善のため</li>
+          <li>ご本人の同意に基づく、提携する求人企業・人材サービス事業者へのご紹介のため</li>
+        </ul>
+
+        <h3>4. 第三者提供</h3>
+        <p>当社は、ご本人の同意がある場合、又は法令で認められる場合を除き、個人情報を第三者に提供しません。お仕事のご紹介にあたり、ご本人の同意に基づき、提携する求人企業・人材サービス事業者へ必要な範囲で情報を提供することがあります。</p>
+
+        <h3>5. 安全管理措置</h3>
+        <p>当社は、取得した個人情報の漏えい、滅失又はき損の防止その他の安全管理のために、必要かつ適切な措置を講じます。通信はSSLにより暗号化しています。</p>
+
+        <h3>6. 開示・訂正・利用停止等の請求</h3>
+        <p>ご本人は、当社の保有する自己の個人情報について、開示、訂正、追加、削除、利用停止等を請求することができます。上記お問い合わせ窓口までご連絡ください。</p>
+
+        <h3>7. お問い合わせ窓口</h3>
+        <p>個人情報の取扱いに関するお問い合わせは、info@example.com までご連絡ください。</p>
+
+        <p>以上</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  // ============================================================
+  // ▼ 応募データの送信先（Google Apps Script の /exec URL）
+  //   ・製造JOBと同じ仕組み（GAS＋スプレッドシート）で運用します。
+  //   ・このLP専用に新しいGAS＋新スプレッドシートをデプロイし、
+  //     発行された /exec URL をここに貼り付けてください。
+  //   ・空のままでもフォームは最後まで動作し、完了画面まで表示されます
+  //     （送信だけスキップ）。プレビュー時はこのままでOK。
+  // ============================================================
+  var GAS_URL = "";
+  // ============================================================
+
+  var TOTAL = 10;
+  var current = 1;
+  var data = {};
+
+  // ============================================================
+  // アクセス解析トラッキング（匿名の件数カウントのみ）
+  //   PV / STEP1〜10到達 / 送信完了(11) を GAS へ送信。
+  //   admin.html の管理画面でファネル分析に使用します。
+  // ============================================================
+  var track = (function(){
+    function sget(store, key){ try{ return store.getItem(key); }catch(e){ return null; } }
+    function sset(store, key, v){ try{ store.setItem(key, v); }catch(e){} }
+    var ua = navigator.userAgent;
+    var device = /iPhone|Android.+Mobile/i.test(ua) ? "スマホ"
+               : (/iPad|Android|Tablet/i.test(ua) ? "タブレット" : "PC");
+    function send(obj){
+      if(!GAS_URL) return;
+      obj.type = "track";
+      var payload = JSON.stringify(obj);
+      try{
+        if(navigator.sendBeacon){
+          navigator.sendBeacon(GAS_URL, new Blob([payload], {type:"text/plain;charset=utf-8"}));
+        }else{
+          fetch(GAS_URL, {method:"POST", mode:"no-cors", keepalive:true,
+            headers:{"Content-Type":"text/plain;charset=utf-8"}, body:payload});
+        }
+      }catch(e){ /* 解析はLP本体の動作に影響させない */ }
+    }
+    var todayStr = new Date().toDateString();
+    var nv = sget(window.localStorage, "sj_last") !== todayStr ? 1 : 0;
+    if(nv) sset(window.localStorage, "sj_last", todayStr);
+    var ns = sget(window.sessionStorage, "sj_s") ? 0 : 1;
+    if(ns) sset(window.sessionStorage, "sj_s", "1");
+    send({ ev:"pv", nv:nv, ns:ns, device:device, referrer:document.referrer || "" });
+    var sentMax = parseInt(sget(window.sessionStorage, "sj_max") || "0", 10);
+    return function(stage){
+      if(stage <= sentMax) return;
+      sentMax = stage;
+      sset(window.sessionStorage, "sj_max", String(stage));
+      send({ ev:"step", stage:stage, referrer:document.referrer || "" });
+    };
+  })();
+
+  // 都道府県データ
+  var prefs = {
+    "北海道・東北":["北海道","青森県","岩手県","宮城県","秋田県","山形県","福島県"],
+    "関東":["東京都","神奈川県","埼玉県","千葉県","茨城県","群馬県","栃木県"],
+    "甲信越・北陸":["山梨県","長野県","新潟県","富山県","石川県","福井県"],
+    "東海":["愛知県","岐阜県","静岡県","三重県"],
+    "関西":["大阪府","兵庫県","京都府","滋賀県","奈良県","和歌山県"],
+    "中国":["鳥取県","島根県","岡山県","広島県","山口県"],
+    "四国":["徳島県","香川県","愛媛県","高知県"],
+    "九州・沖縄":["福岡県","佐賀県","長崎県","熊本県","大分県","宮崎県","鹿児島県","沖縄県"]
+  };
+  function fillPrefs(selectEl){
+    Object.keys(prefs).forEach(function(region){
+      var g = document.createElement("optgroup");
+      g.label = region;
+      prefs[region].forEach(function(p){
+        var o = document.createElement("option");
+        o.value = p; o.textContent = p; g.appendChild(o);
+      });
+      selectEl.appendChild(g);
+    });
+  }
+  var sel = document.getElementById("pref");          // 希望勤務エリア
+  var selRes = document.getElementById("residence");  // 現在いる地域
+  fillPrefs(sel);
+  fillPrefs(selRes);
+
+  // 生年月日セレクトの選択肢を生成
+  (function fillBirth(){
+    var y = document.getElementById("birthY");
+    var m = document.getElementById("birthM");
+    var d = document.getElementById("birthD");
+    function add(el, val, txt){
+      var o = document.createElement("option");
+      o.value = val; o.textContent = txt; el.appendChild(o);
+    }
+    for(var i = 2010; i >= 1940; i--) add(y, String(i), i + "年");
+    for(var j = 1; j <= 12; j++) add(m, String(j), j + "月");
+    for(var k = 1; k <= 31; k++) add(d, String(k), k + "日");
+  })();
+
+  // 更新日時（3時間おきの区切りに丸めて表示）
+  var now = new Date();
+  var UPDATE_INTERVAL_H = 3;
+  now.setHours(Math.floor(now.getHours()/UPDATE_INTERVAL_H)*UPDATE_INTERVAL_H, 0, 0, 0);
+  document.getElementById("updTime").textContent =
+    (now.getMonth()+1)+"月"+now.getDate()+"日 " +
+    ("0"+now.getHours()).slice(-2)+":"+("0"+now.getMinutes()).slice(-2)+" 最新求人更新";
+
+  var introScreen = document.getElementById("introScreen");
+  var formScreen  = document.getElementById("formScreen");
+  var doneScreen  = document.getElementById("doneScreen");
+  var fill = document.getElementById("fill");
+  var stepLabel = document.getElementById("stepLabel");
+  var stepPct = document.getElementById("stepPct");
+
+  // プライバシーポリシー モーダルの開閉
+  var ppModal = document.getElementById("ppModal");
+  function openPP(e){ if(e) e.preventDefault(); ppModal.classList.add("open"); document.body.style.overflow = "hidden"; }
+  function closePP(){ ppModal.classList.remove("open"); document.body.style.overflow = ""; }
+  document.querySelectorAll("[data-pp]").forEach(function(a){ a.addEventListener("click", openPP); });
+  document.getElementById("ppClose").addEventListener("click", closePP);
+  ppModal.addEventListener("click", function(e){ if(e.target === ppModal) closePP(); });
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape") closePP(); });
+
+  // ロゴクリック → 最初の画面（intro）に戻る
+  function goHome(){
+    doneScreen.classList.remove("active");
+    formScreen.style.display = "none";
+    introScreen.style.display = "";
+    showStep(1);
+    openIntroModal();
+    window.scrollTo(0,0);
+  }
+  document.getElementById("homeLogo").addEventListener("click", goHome);
+
+  // お気持ちモーダル（スマホ）：開閉
+  function openIntroModal(){ introScreen.classList.add("modal-open"); }
+  function closeIntroModal(){ introScreen.classList.remove("modal-open"); }
+  openIntroModal();
+  document.getElementById("introClose").addEventListener("click", closeIntroModal);
+  introScreen.addEventListener("click", function(e){
+    if(introScreen.classList.contains("modal-open") && !e.target.closest(".intro")){
+      closeIntroModal();
+    }
+  });
+
+  // 気持ち選択 → フォーム開始
+  document.querySelectorAll("[data-feeling]").forEach(function(b){
+    b.addEventListener("click", function(){
+      data.feeling = b.getAttribute("data-feeling");
+      introScreen.style.display = "none";
+      formScreen.style.display = "block";
+      window.scrollTo(0,0);
+      updateProgress();
+      track(1);
+    });
+  });
+
+  // 選択式（自動で次へ）
+  document.querySelectorAll(".opts[data-auto]").forEach(function(group){
+    var key = group.getAttribute("data-key");
+    group.querySelectorAll(".opt").forEach(function(opt){
+      opt.addEventListener("click", function(){
+        group.querySelectorAll(".opt").forEach(function(o){o.classList.remove("sel");});
+        opt.classList.add("sel");
+        data[key] = opt.getAttribute("data-val");
+        setTimeout(function(){ goNext(); }, 220);
+      });
+    });
+  });
+
+  document.querySelectorAll("[data-back]").forEach(function(b){
+    b.addEventListener("click", goBack);
+  });
+  document.querySelectorAll("[data-next]").forEach(function(b){
+    b.addEventListener("click", goNext);
+  });
+  document.getElementById("submitBtn").addEventListener("click", goNext);
+
+  function showStep(n){
+    document.querySelectorAll(".step").forEach(function(s){
+      s.classList.toggle("active", +s.getAttribute("data-step") === n);
+    });
+    current = n;
+    updateProgress();
+    window.scrollTo(0,0);
+    track(n);
+  }
+  function updateProgress(){
+    var pct = Math.round(current/TOTAL*100);
+    fill.style.width = pct + "%";
+    stepLabel.textContent = "STEP " + current + " / " + TOTAL;
+    stepPct.textContent = pct + "%";
+  }
+  function goBack(){
+    if(current > 1){ showStep(current-1); }
+    else {
+      formScreen.style.display = "none";
+      introScreen.style.display = "";
+      openIntroModal();
+      window.scrollTo(0,0);
+    }
+  }
+  function goNext(){
+    if(!validate(current)) return;
+    if(current < TOTAL){ showStep(current+1); }
+    else { submit(); }
+  }
+
+  function validate(n){
+    if(n === 7){
+      data.residence = selRes.value;
+      return mark("f-res", !!selRes.value);
+    }
+    if(n === 8){
+      data.pref = sel.value;
+      return mark("f-pref", !!sel.value);
+    }
+    if(n === 9){
+      var name = document.getElementById("name").value.trim();
+      var okName = name.length >= 1;
+      data.name = name;
+
+      var furiEl = document.getElementById("furigana");
+      var furigana = furiEl.value.trim().replace(/[ぁ-ゖ]/g, function(c){
+        return String.fromCharCode(c.charCodeAt(0) + 0x60);
+      });
+      if(furigana && furigana !== furiEl.value.trim()) furiEl.value = furigana;
+      var okFuri = /^[ァ-ヶーｦ-ﾟ・\s　]+$/.test(furigana);
+      data.furigana = furigana;
+
+      var by = document.getElementById("birthY").value;
+      var bm = document.getElementById("birthM").value;
+      var bd = document.getElementById("birthD").value;
+      var okBirth = false;
+      if(by && bm && bd){
+        var dt = new Date(Number(by), Number(bm)-1, Number(bd));
+        okBirth = dt.getFullYear() === Number(by) &&
+                  dt.getMonth() === Number(bm)-1 &&
+                  dt.getDate() === Number(bd);
+      }
+      data.birth = okBirth ? by + "/" + ("0"+bm).slice(-2) + "/" + ("0"+bd).slice(-2) : "";
+
+      var gender = document.getElementById("gender").value;
+      var okGender = !!gender;
+      data.gender = gender;
+
+      var a = mark("f-name", okName);
+      var b = mark("f-furigana", okFuri);
+      var c = mark("f-birth", okBirth);
+      var d = mark("f-gender", okGender);
+      return a && b && c && d;
+    }
+    if(n === 10){
+      var tel = document.getElementById("tel").value.trim();
+      var okTel = /^0\d{9,10}$/.test(tel);
+      data.tel = tel;
+      var email = document.getElementById("email").value.trim();
+      var okEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      data.email = email;
+      var a = mark("f-tel", okTel);
+      var b = mark("f-email", okEmail);
+      var agree = document.getElementById("agree").checked;
+      document.getElementById("agreeErr").style.display = agree ? "none" : "block";
+      return a && b && agree;
+    }
+    return true;
+  }
+  function mark(id, ok){
+    document.getElementById(id).classList.toggle("invalid", !ok);
+    return ok;
+  }
+
+  var labels = {
+    feeling:"お気持ち", situation:"現在の状況", workstyle:"希望の働き方",
+    timing:"働きたい時期", dormitory:"入寮希望", jobtype:"希望の仕事",
+    support:"希望サポート", residence:"現在いる地域", pref:"希望勤務エリア",
+    name:"お名前", furigana:"フリガナ", birth:"生年月日", gender:"性別",
+    tel:"携帯番号", email:"メールアドレス"
+  };
+  var order = ["feeling","situation","workstyle","timing","dormitory","jobtype","support","residence","pref","name","furigana","birth","gender","tel","email"];
+
+  function submit(){
+    var btn = document.getElementById("submitBtn");
+    if(btn.dataset.sending === "1") return;
+    btn.dataset.sending = "1";
+
+    data.submittedAt = new Date().toISOString();
+
+    sendData();
+    track(11);
+
+    finish();
+  }
+
+  function sendData(){
+    if(!GAS_URL){
+      console.warn("GAS_URL が未設定です。送信はスキップします（プレビュー）。");
+      return;
+    }
+    try{
+      var body = JSON.stringify(data);
+      fetch(GAS_URL, {
+        method: "POST",
+        mode: "no-cors",
+        keepalive: true,
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: body
+      }).catch(function(err){ console.error("送信エラー(fetch):", err); });
+    }catch(err){
+      try{
+        navigator.sendBeacon(GAS_URL, new Blob([JSON.stringify(data)], {type:"text/plain;charset=utf-8"}));
+      }catch(e){ console.error("送信エラー(beacon):", e); }
+    }
+  }
+
+  function finish(){
+    var html = "";
+    order.forEach(function(k){
+      if(data[k]){
+        var v = data[k];
+        html += '<div class="line"><span>'+labels[k]+'</span><span>'+escapeHtml(v)+'</span></div>';
+      }
+    });
+    document.getElementById("summary").innerHTML = html;
+    formScreen.style.display = "none";
+    doneScreen.classList.add("active");
+    window.scrollTo(0,0);
+    console.log("送信データ:", data);
+  }
+  function escapeHtml(s){
+    return String(s).replace(/[&<>"']/g,function(c){
+      return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];
+    });
+  }
+
+  // 固定フッターの高さ分をコンテンツ下に余白として確保
+  function updateFooterSpace(){
+    var f = document.querySelector("footer");
+    if(!f) return;
+    document.documentElement.style.setProperty("--footer-h", f.offsetHeight + "px");
+  }
+  window.addEventListener("load", updateFooterSpace);
+  window.addEventListener("resize", updateFooterSpace);
+  updateFooterSpace();
+
+  updateProgress();
+})();
+</script>
+</body>
+</html>
