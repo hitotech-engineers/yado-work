@@ -612,7 +612,7 @@ footer .fname { font-size: 19px !important; font-style: italic; }
   .step-lp #introScreen .hero {
     width: 100% !important;
     max-width: none !important;
-    min-height: 560px !important;
+    min-height: 650px !important;
     align-items: center !important;
     overflow: hidden !important;
     border: 0 !important;
@@ -621,14 +621,14 @@ footer .fname { font-size: 19px !important; font-style: italic; }
     box-shadow: none !important;
     background:
       linear-gradient(90deg, rgba(112, 0, 8, .98) 0%, rgba(194, 0, 14, .94) 45%, rgba(178, 0, 13, .48) 66%, rgba(18, 18, 18, .08) 100%),
-      url("images/hero-bg.png") 82% center / cover no-repeat !important;
+      url("images/hero-bg.png") 82% 38% / cover no-repeat !important;
   }
 
   .step-lp #introScreen .hero .inner {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 68px 20px 72px !important;
+    padding: 82px 20px 88px !important;
   }
 
   .step-lp #introScreen .hero .sub {
