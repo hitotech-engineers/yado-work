@@ -574,6 +574,116 @@ footer .fname { font-size: 19px !important; font-style: italic; }
   font-size: 11px !important;
 }
 
+/* Keep the step funnel compact on desktop and prevent its photo from doubling. */
+@media (min-width: 900px) {
+  body.step-lp {
+    background: #f6efe6 !important;
+  }
+
+  .step-lp .wrap {
+    width: 100% !important;
+    max-width: 520px !important;
+    margin: 0 auto !important;
+    background: #fff8e9 !important;
+    box-shadow: 0 0 48px rgba(23, 23, 23, .13);
+  }
+
+  .step-lp .wrap > header {
+    padding: 13px 20px !important;
+  }
+
+  .step-lp .wrap > header .logo { font-size: 21px !important; }
+  .step-lp .wrap > header .tag { font-size: 10.5px !important; }
+
+  .step-lp #introScreen {
+    display: block !important;
+    min-height: auto !important;
+    padding: 0 !important;
+    background: transparent !important;
+    overflow: visible !important;
+  }
+
+  .step-lp #introScreen::before { display: none !important; }
+
+  .step-lp #introScreen .hero {
+    width: 100% !important;
+    max-width: none !important;
+    min-height: 540px !important;
+    align-self: stretch !important;
+    overflow: hidden !important;
+  }
+
+  .step-lp #introScreen .hero .inner {
+    padding: 40px 24px 34px !important;
+  }
+
+  .step-lp #introScreen .hero .sub {
+    margin-bottom: 16px !important;
+    padding: 7px 16px !important;
+    font-size: 13px !important;
+  }
+
+  .step-lp #introScreen .hero h1 {
+    margin: 14px 0 12px !important;
+    font-size: 28px !important;
+    line-height: 1.3 !important;
+  }
+
+  .step-lp #introScreen .hero .lead {
+    font-size: 12px !important;
+    line-height: 1.65 !important;
+  }
+
+  .step-lp #introScreen .hero .lead br { display: inline !important; }
+
+  .step-lp #introScreen .hero .badges {
+    margin-top: 14px !important;
+    gap: 8px !important;
+  }
+
+  .step-lp #introScreen .intro {
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 30px 20px 42px !important;
+    background: #fff8e9 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .step-lp #introScreen .intro .q { font-size: 22px !important; }
+  .step-lp #introScreen .cta-row { display: block !important; }
+
+  .step-lp #introScreen .cta-row .cta {
+    width: 100% !important;
+    margin: 11px 0 !important;
+    font-size: 17px !important;
+  }
+
+  .step-lp #introScreen .trust .t {
+    flex-direction: column !important;
+    gap: 4px !important;
+  }
+
+  .step-lp #introScreen .trust .tt { align-items: center !important; }
+  .step-lp #introScreen .trust b { font-size: 18px !important; }
+  .step-lp #introScreen .trust span { font-size: 10.5px !important; }
+  .step-lp #introScreen .trust .t .material-symbols-outlined { font-size: 30px !important; }
+
+  .step-lp #formScreen,
+  .step-lp #doneScreen {
+    width: 100% !important;
+    max-width: 520px !important;
+    margin: 0 auto !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .step-lp .wrap > footer {
+    padding: 26px 20px !important;
+  }
+}
+
 .intro {
   position: relative;
   padding: 30px 20px 42px !important;
