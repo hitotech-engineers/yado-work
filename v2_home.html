@@ -172,6 +172,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     box-shadow:var(--shadow-sm);
   }
   .opts.two .opt{justify-content:center;text-align:center;padding:24px 10px;}
+  .opts.two .opt.opt-wide{grid-column:1 / -1;padding:18px 10px;}
+  .opt .opt-copy{display:flex;flex-direction:column;align-items:flex-start;line-height:1.35;}
+  .opt .opt-copy small{margin-top:3px;color:var(--primary);font-size:11.5px;font-weight:900;}
   .opt .ic{
     width:38px;height:38px;border-radius:10px;
     background:linear-gradient(135deg,#fde0d5,#fbd3c4);color:var(--primary);
@@ -417,7 +420,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="note">あてはまる方をお選びください</div>
       <div class="cta-row">
         <button class="cta cta-primary" data-feeling="今すぐ働いて住みたい">
-          <span class="txt">今すぐ働いて住みたい<small>スピード重視で寮付き求人を紹介</small></span>
+          <span class="txt">今すぐ働いて住みたい<small>最短即日のご紹介も可能です</small></span>
         </button>
         <button class="cta cta-secondary" data-feeling="良い条件があれば知りたい">
           <span class="txt">良い条件があれば知りたい。</span>
@@ -448,7 +451,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h2>今の状況を教えてください</h2>
       <div class="desc">あてはまるものをお選びください</div>
       <div class="opts" data-key="situation" data-auto>
-        <button class="opt" data-val="今すぐに住む場所がほしい"><span class="ic">🏠</span>今すぐに住む場所がほしい</button>
+        <button class="opt" data-val="今すぐに住む場所がほしい"><span class="ic">🏠</span><span class="opt-copy">今すぐに住む場所がほしい<small>最短即日でご紹介・所持金0円でもOK</small></span></button>
         <button class="opt" data-val="離職済みで求職中"><span class="ic">🔍</span>離職済みで求職中</button>
         <button class="opt" data-val="転職検討中"><span class="ic">💼</span>転職検討中</button>
       </div>
@@ -474,8 +477,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="opts" data-key="dormitory" data-auto>
         <button class="opt" data-val="今すぐ入寮したい"><span class="ic">🏠</span>今すぐ入寮したい</button>
         <button class="opt" data-val="寮付きが嬉しい"><span class="ic">🛏️</span>寮付きが嬉しい</button>
-        <button class="opt" data-val="通勤希望"><span class="ic">🚶</span>通勤希望</button>
         <button class="opt" data-val="どちらでも良い"><span class="ic">🤝</span>どちらでも良い</button>
+        <button class="opt" data-val="通勤希望"><span class="ic">🚶</span>通勤希望</button>
       </div>
       <div class="nav"><button class="btn btn-back" data-back>＜ 戻る</button></div>
     </div>
@@ -489,6 +492,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <button class="opt" data-val="軽作業・仕分け">軽作業・仕分け</button>
         <button class="opt" data-val="物流・ドライバー">物流・ドライバー</button>
         <button class="opt" data-val="建築・設備">建築・設備</button>
+        <button class="opt opt-wide" data-val="特にこだわりなし・お任せ">特にこだわりなし・お任せ</button>
       </div>
       <div class="nav"><button class="btn btn-back" data-back>＜ 戻る</button></div>
     </div>
