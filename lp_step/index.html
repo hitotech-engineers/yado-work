@@ -684,18 +684,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   // ============================================================
   // ▼ 応募データの送信先（Google Apps Script の /exec URL）
-  //   ・製造JOBと同じ仕組み（GAS＋スプレッドシート）で運用します。
-  //   ・このLP専用に新しいGAS＋新スプレッドシートをデプロイし、
+  //   ・ヤドワーク共通GAS＋スプレッドシートで運用します。
+  //   ・shared/Code.gs をGASへ貼り付けてデプロイし、
   //     発行された /exec URL をここに貼り付けてください。
   //   ・空のままでもフォームは最後まで動作し、完了画面まで表示されます
   //     （送信だけスキップ）。プレビュー時はこのままでOK。
   // ============================================================
   var GAS_URL = "";
+  var LP_TYPE = "ステップ版";
   // ============================================================
 
   var TOTAL = 8;
   var current = 1;
-  var data = {};
+  var data = { lpType: LP_TYPE };
 
   // ============================================================
   // アクセス解析トラッキング（匿名の件数カウントのみ）
@@ -711,6 +712,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     function send(obj){
       if(!GAS_URL) return;
       obj.type = "track";
+      obj.lpType = LP_TYPE;
       var payload = JSON.stringify(obj);
       try{
         if(navigator.sendBeacon){
